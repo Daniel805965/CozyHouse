@@ -1,0 +1,9 @@
+@mixin trs {
+    transition: all .3ms;
+}
+
+@mixin b($width) {
+    @media (max-width: $width + px) {
+        @content
+    }
+}
