@@ -1,0 +1,100 @@
+@import "../variables";
+@import "../mixins";
+
+.PetsOur-friends {
+    padding: 65px 0 60px;
+    background-color: #f6f6f6;
+
+    .caption {
+        max-width: 410px;
+        margin: 0 auto 70px;
+        text-align: center;
+    }
+    .dots {
+        display: inline-block;
+        line-height: 0;
+        letter-spacing: -7px;
+        margin: 0 auto;
+        font-size: 75px;
+        color: $beige-color;
+    }
+
+    .button:hover {
+        background-color: $beige-color;
+        transition: all .3s;
+    }
+
+    &__outer {
+        margin-bottom: 65px;
+        position: relative;
+    }
+    &__wrap {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: 25%;
+        padding: 0 25px;
+        @include b(768) {
+            width: 50%;
+            padding: 0 15px;
+        }
+    }
+
+    &__box {
+        background-color: #fafafa;
+        border-radius: 10px;
+        padding: 10px 10px 35px;
+        margin-bottom: 10px;;
+
+        &:hover {
+            box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    &__img {
+        height: 210px;
+        display: flex;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+
+        }
+    }
+
+    &__name {
+        display: block;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        max-width: 290px;
+        margin: 0 auto;
+        font-family: 'Times New Roman';
+        font-size: 20px;
+
+
+
+        &-item{
+            padding: 0 5px;
+        }
+    }
+}
